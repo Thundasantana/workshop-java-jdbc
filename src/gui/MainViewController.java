@@ -58,7 +58,7 @@ public class MainViewController implements Initializable {
 			VBox newVbox = loader.load();
 			
 			Scene mainScene = Main.getMainScene();
-			VBox mainVBox = (VBox) ((ScrollPane)mainScene.getRoot()).getContent();
+			VBox mainVBox = (VBox) ((ScrollPane) mainScene.getRoot()).getContent();
 			
 			Node mainMenu = mainVBox.getChildren().get(0);
 			mainVBox.getChildren().clear();
@@ -69,7 +69,7 @@ public class MainViewController implements Initializable {
 			initializingAction.accept(controller);
 		}
 		catch (IOException e) {
-			Alerts.showAlert("IO exception", "Error loading view", e.getMessage(), AlertType.ERROR);
+			Alerts.showAlert("IO Exception", "Error loading view", e.getMessage(), AlertType.ERROR);
 		}
 	}	
 }
