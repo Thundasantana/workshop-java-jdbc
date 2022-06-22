@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<VBox prefHeight="223.0" prefWidth="324.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18">
+<VBox prefHeight="223.0" prefWidth="324.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label prefHeight="229.0" prefWidth="344.0" text="Department Registration">
          <font>
@@ -22,10 +21,11 @@
       </Label>
     <Button mnemonicParsing="false" text="New" />
       <ToolBar prefHeight="40.0" prefWidth="200.0" />
-      <TableView prefHeight="200.0" prefWidth="200.0">
+      <TableView prefHeight="340.0" prefWidth="324.0">
         <columns>
           <TableColumn prefWidth="75.0" text="ID" />
           <TableColumn prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="tableColumnEDIT" prefWidth="75.0" />
         </columns>
       </TableView>
    </children>
